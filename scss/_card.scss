@@ -1,0 +1,31 @@
+.card-1 {
+    box-shadow: 5px 5px 25px rgb(95, 95, 95);
+}
+
+.card-1:hover {
+    transform: scale(1.05);
+    transition: .3s linear;
+}
+
+.card-2 {
+    border: 5px;
+    border-style: solid;
+    border-color: $tertiary-color;
+}
+
+.card-2:hover {
+    transform: scale(1.05);
+    transition: .3s linear;
+}
+
+.card-3 {
+    border: 5px;
+    border-style: solid;
+    border-color: $secondary-color;
+}
+
+.quote {
+    border-top: double;
+    border-bottom: double;
+    border-color: $tertiary-color;
+}

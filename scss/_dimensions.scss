@@ -1,0 +1,37 @@
+@function width_size($w) {
+    @return (100%/6 * $w);
+}
+
+$full-width: width_size(6);
+$medium-width: width_size(3);
+$small-width: width_size(2);
+
+.full-width {
+    width: width_size(6);
+}
+.medium-width {
+    width: width_size(3);
+}
+.small-width {
+    width: width_size(2);
+}
+
+.large-height {
+    height: 150px;
+}
+
+.medium-height {
+    height: 75px;
+}
+
+.default-height {
+    height: auto;
+}
+
+.padding {
+    padding: 1%;
+}
+
+.margin {
+    margin: 1%;
+}

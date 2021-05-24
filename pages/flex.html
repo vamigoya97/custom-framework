@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-column">
+        <div class="flex flex-row space-evenly center-items">
+            <header class="small-width">
+                <h1 class='logo'>Amigo Framework</h1>
+            </header>
+            <nav class='nav-bar medium-width'>
+                <ul class="flex flex-row space-evenly no-list">
+                    <li class="list-item"><a href="../index.html">Home</a></li>
+                    <li class="list-item"><a href="./flex.html">Flex</a></li>
+                    <li class="list-item"><a href="./card.html">Card</a></li>
+                    <li class="list-item"><a href="./navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="./text.html">Text</a></li>
+                    <li class="list-item"><a href="./sample.html">Sample</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="text-center padding margin quote">This framework uses flexbox to layout the desired HTML elements in your webpage. It allows the user to customize how each element is positioned and displayed in many different ways. By enclosing semantic HTML elements with div elements, the user will have the power to create appealing applications by just adding classes to each element. Here are a few examples of what one could do using this framework.</p>
+        <p class="padding margin"><b>Add class="flex flex-row" in order to display elements horizontally</b></p>
+        <div class="flex flex-row">
+            <div class="card-1 padding margin small-width text-center">
+                <p>1</p>
+            </div>
+            <div class="card-1 padding margin small-width text-center">
+                <p>2</p>
+            </div>
+            <div class="card-1 padding margin small-width text-center">
+                <p>3</p>
+            </div>
+        </div>
+        <p class="padding margin"><b>Add class="flex flex-column" in order to display elements vertically</b></p>
+        <div class="flex flex-column">
+            <div class="card-1 padding margin small-width text-center">
+                <p>1</p>
+            </div>
+            <div class="card-1 padding margin small-width text-center">
+                <p>2</p>
+            </div>
+            <div class="card-1 padding margin small-width text-center">
+                <p>3</p>
+            </div>
+        </div>
+        <p class="padding margin"><b>Add class="flex flex-column center-items" to display elements vertically and centered</b></p>
+        <div class="flex flex-column center-items">
+            <div class="card-1 padding margin small-width text-center">
+                <p>1</p>
+            </div>
+            <div class="card-1 padding margin small-width text-center">
+                <p>2</p>
+            </div>
+            <div class="card-1 padding margin small-width text-center">
+                <p>3</p>
+            </div>
+        </div>
+        <p class="padding margin"><b>Add the classes in each card to change the element's width</b></p>
+        <div class="flex flex-row">
+            <div class="card-1 padding margin small-width">
+                <p>class="small-width"</p>
+            </div>
+            <div class="card-1 padding margin medium-width">
+                <p>class="medium-width"</p>
+            </div>
+        </div>
+        <div class="card-1 padding margin large-width">
+            <p>class="large-width"</p>
+        </div>
+        <p class="padding margin"><b>Add the classes mentioned below to change the element's height</b></p>
+        <div class="flex flex-row center-items margin padding">
+            <div class="card-1 small-width small-height margin padding">
+                <p>class="small-height"</p>
+            </div>
+            <div class="card-1 small-width medium-height margin padding">
+                <p>class="medium-height"</p>
+            </div>
+            <div class="card-1 small-width large-height margin padding">
+                <p>class="large-height"</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

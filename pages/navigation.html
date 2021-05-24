@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-column">
+        <div class="flex flex-row space-evenly center-items">
+            <header class="small-width">
+                <h1 class='logo'>Amigo Framework</h1>
+            </header>
+            <nav class='nav-bar medium-width'>
+                <ul class="flex flex-row space-evenly no-list">
+                    <li class="list-item"><a href="../index.html">Home</a></li>
+                    <li class="list-item"><a href="./flex.html">Flex</a></li>
+                    <li class="list-item"><a href="./card.html">Card</a></li>
+                    <li class="list-item"><a href="./navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="./text.html">Text</a></li>
+                    <li class="list-item"><a href="./sample.html">Sample</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="text-center padding margin quote">The responsive navigation bar adapts to two different screen sizes and utilizes the unordered list element to display all of the links deemed necessary.</p>
+        <p class="padding margin"><b>Each item below has class="list-item" positioned inside a ul tag with a class="flex flex-row space-evenly no-list" in order to display them evenly spaced out, with no list marks and horizontally. All of this is wrapped inside a nav tag with class="nav-bar".</b></p>
+        <nav class='nav-bar large-width'>
+            <ul class="flex flex-row space-evenly no-list">
+                <li class="list-item"><a>Item 1</a></li>
+                <li class="list-item"><a>Item 2</a></li>
+                <li class="list-item"><a>Item 3</a></li>
+                <li class="list-item"><a>Item 4</a></li>
+                <li class="list-item"><a>Item 5</a></li>
+            </ul>
+        </nav>
+        <p class="padding margin"><b>The user can also create a dropdown item so that more options can be added to the navigation seamlessly. A div element with class="dropdown" must be added inside of the ul tag. Then, add a button with class="dropdown-button" with an accompanied div element with class="dropdown-content" which will hold all of the li and a elements necessary.</b></p>
+        <nav class='nav-bar large-width'>
+            <ul class="flex flex-row space-evenly no-list">
+                <div class="dropdown">
+                    <button class="dropdown-button">Dropdown Menu</button>
+                    <div class="dropdown-content">
+                        <li class="list-item"><a>Item 1</a></li>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <p class="padding margin"><b>The breakpoints added will allow the navigation bar to adapt to two screen sizes, specifically for iPhone X and iPad. It will change the flex direction of the nav element so that it can fit the specified screen.</b></p>
+        <div class="flex flex-row padding margin">
+            <div class="card-1 padding margin medium-width text-center">
+                <p>First media query: iPhone X</p>
+                <p>min-device-width: 375px;</p>
+                <p>max-device-width: 812px;</p>
+                <p>device-pizel-ratio: 3;</p>
+            </div>
+            <div class="card-1 padding margin medium-width text-center">
+                <p>First media query: iPad</p>
+                <p>min-device-width: 834px;</p>
+                <p>max-device-width: 1112px;</p>
+                <p>device-pizel-ratio: 2;</p>
+            </div>
+        </div>
+        <p class="padding margin"><b>The user is capable of changing such dimensions in the _breakpoints.scss file.</b></p>
+    </div>
+</body>

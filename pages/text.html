@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../scss/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="flex flex-column">
+        <div class="flex flex-row space-evenly center-items">
+            <header class="small-width">
+                <h1 class='logo'>Amigo Framework</h1>
+            </header>
+            <nav class='nav-bar medium-width'>
+                <ul class="flex flex-row space-evenly no-list">
+                    <li class="list-item"><a href="../index.html">Home</a></li>
+                    <li class="list-item"><a href="./flex.html">Flex</a></li>
+                    <li class="list-item"><a href="./card.html">Card</a></li>
+                    <li class="list-item"><a href="./navigation.html">Navigation</a></li>
+                    <li class="list-item"><a href="./text.html">Text</a></li>
+                    <li class="list-item"><a href="./sample.html">Sample</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p class="padding margin quote text-center">This framework provided two different fonts to combine and choose from as well as different sizes to highlight and differentiate the information inside the app.</p>
+        <div class="flex flex-row space-evenly">
+            <h1 class="padding margin">h1</h1>
+            <h2 class="padding margin">h2</h2>
+            <h3 class="padding margin">h3</h3>
+            <h4 class="padding margin">h4</h4>
+            <p class="padding margin">p</p>
+        </div>
+        <p class="padding margin"><b>The two fonts utilized are mentioned below and can be changed by downloading new ones and changing the global variables below. One can access them in the _variables.scss file.</b></p>
+        <div class="flex flex-row space-evenly">
+            <div class="card-1 margin padding">
+                <p>$primary-font: 'Julius Sans One', sans-serif;</p>
+            </div>
+            <div class="card-1 margin padding">
+                <p>$secondary-font: 'Quicksand', sans-serif;</p>
+            </div>
+        </div>
+        <p class="padding margin"><b>There is a global variable to create a type scale of the font as well as for the line height. They can be manipulated in the _variables.scss file.</b></p>
+        <div class="flex flex-row space-evenly">
+            <div class="card-1 margin padding">
+                <p>$base-font-size: 1.2rem;</p>
+            </div>
+            <div class="card-1 margin padding">
+                <p>$base-line-height: 1.75rem;</p>
+            </div>
+        </div>
+        <p class="padding margin"><b>There are three main colors that are used in the framework than can be changed by simply modifying the below variables inside _variables.scss.</b></p>
+        <div class="flex flex-row space-evenly">
+            <div class="card-1 margin padding">
+                <p>$primary-color: #2b3a67;</p>
+            </div>
+            <div class="card-1 margin padding" style="background-color: #e84855;">
+                <p>$secondary-color: #e84855;</p>
+            </div>
+            <div class="card-1 margin padding" style="background-color: #fff0f5;">
+                <p style="color: #e84855;">$tertiary-color: #fff0f5;</p>
+            </div>
+        </div>
+            
+    </div>
+</body>
+</html>
